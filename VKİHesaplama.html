@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>VKİHesaplama</title>
+</head>
+<style>
+    body {background-color: wheat; text-align: left; font-size: 15px}
+    p {color: black;}
+    h1 {font-size: 35px; color:black;}
+    h2{font-size: 25px; color: black;}
+    a {color: black;}
+    hr {color: black;}
+    pre {color: black;}
+    button { background-color: rgb(184, 71, 184); color: gold; padding: 10px 100px;}
+    .border {background-color: rgb(184, 71, 184); color: gold; border: 2px dashed black; margin: 20px; padding: 20px;}
+    table,th,td {border: 3px solid purple; width: 100; padding: 10px 100px; border-collapse: collapse; text-align: center;}
+    th:hover {background-color: purple;}
+    td:hover{background-color: gold;}
+</style>
+
+<body>
+    <button onclick="window.location.href='http://127.0.0.1:5500/'" target="_blank">Anasayfa</button>
+    <hr>
+    <label for="Hedef">Kilo Hedefiniz Nedir?</label>
+    <select name="Hedef" id="Hedef">
+        <option value="Kilo vermek">Kilo vermek</option>
+        <option value="Kiloyou korumak">Kiloyu korumak</option>
+        <option value="Kilo almak">Kilo almak</option>
+    </select>
+
+    <hr>
+    <table>
+        <tr>
+            <th colspan="3">Bilgiler</th>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+                <td colspan="2">
+                    <form>
+                        <input type="radio" name="Cinsiyet" id="Erkek" value="Erkek">
+                        <label for="Erkek">Erkek</label>
+                        <input type="radio" name="Cinsiyet" id="Kadın" value="Kadın">
+                        <label for="Kadın">Kadın</label>
+                    </form>
+                </td>
+
+        </tr>
+        <tr>
+            <th>Kilo</th>
+            <td colspan="2"><input type="text" id="Kilo"></td>
+        </tr>
+        <tr>
+            <th>Boy</th>
+            <td colspan="2"><input type="text" id="Kilo"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Hesapla"></td>
+        </tr>
+    </table>
+<hr>
+    <table>
+        <caption>Sonuç Tablosu</caption>
+        <tr>
+            <th>Vücut Kitle İndeksi</th>
+            <td><output name="VKİ" for=""></output></td>
+        </tr>
+    </table>
+<hr>
+    <table>
+        <caption>Sonuçların Analizi</caption>
+        <tr>
+            <td>18.5'den Küçükse</td>
+            <td>Zayıf</td>
+        </tr>
+        <tr>
+            <td>18.5 ile 24.9 arası</td>
+            <td>Sağlıklı</td>
+        </tr>
+        <tr>
+            <td>25 ile 29.9 arası</td>
+            <td>Kilolu</td>
+        </tr>
+        <tr>
+            <td>30 ve Üstü</td>
+            <td>Obez</td>
+        </tr>
+    </table>
+</body>
+</html>
