@@ -13,11 +13,42 @@
     pre {color: black;}
     button { background-color: rgb(184, 71, 184); color: gold; padding: 10px 100px;}
     .border {background-color: rgb(184, 71, 184); color: gold; border: 2px dashed black; margin: 20px; padding: 20px;}
+    table,th,td {border: 3px solid purple; width: 100; padding: 10px 100px; border-collapse: collapse; text-align: center;}
+    th:hover {background-color: purple;}
+    td:hover{background-color: gold;}
  </style>
 
 <body>
     <button onclick="window.location.href='https://aceliltunc.github.io/'">Anasayfa</button>
 <hr>
-    <iframe src="http://newlifesporbandirma.com/form/vyo/index.html" height="500" width="1700" title="Iframe Example" style="border: none"></iframe>
+<table>
+    <tr>
+        <th>Cinsiyet</th>
+        <td>
+            <input type="radio" name="Cinsiyet" id="Erkek" value="Erkek">
+            <label for="Erkek">Erkek</label>
+            <input type="radio" name="Cinsiyet" id="Kadın" value="Kadın">
+            <label for="Kadın">Kadın</label>
+        </td>
+    </tr>
+    <tr>
+        <th>Boy(cm)</th>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>Boyun Çevresi (en geniş-cm)</th>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>Bel Çevresi (en ince-cm)</th>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>Yağ Oranı Sonucu</th>
+        <td><output name="YagOrani" for="YagOrani"></output></td>
+    </tr>
+    
+</table>
+    
 </body>
 </html>
